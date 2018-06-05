@@ -6283,35 +6283,15 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: 'Song Myung', serif; }
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.1 rem; }
 
 .hidden,
 [hidden] {
   background: aliceblue; }
 
-.header {
-  align-items: center;
-  background: cornsilk;
-  display: flex;
-  height: 80px;
-  justify-content: space-between;
-  padding: 20px; }
-
-.header__logo {
-  background: plum;
-  border-radius: 4px;
-  color: white;
-  padding: 4px 10px; }
-
-.header__settings {
-  align-items: center;
-  border-radius: 50%;
-  border: 2px solid;
-  color: plum;
-  display: flex;
-  font-weight: bold;
-  height: 24px;
-  justify-content: center;
-  width: 24px; }
+header {
+  height: 10vh;
+  background-color: #00ea98; }
 
 /*# sourceMappingURL=style.css.map */
