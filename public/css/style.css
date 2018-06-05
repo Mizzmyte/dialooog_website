@@ -6284,13 +6284,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'PT Sans', sans-serif;
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 .hidden,
 [hidden] {
   background: aliceblue; }
 
-header {
+.header {
   height: 10vh;
   background-color: #00ea98; }
 
