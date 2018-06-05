@@ -4,3 +4,12 @@
 
 // add more components like header here
 @import 'components/header';
+
+$green: rgba(0, 234, 152, 1);
+$blue: rgba(12, 52, 72, 1);
+
+.about {
+  background-color: $green;
+  color: white;
+  padding: 30px;
+}

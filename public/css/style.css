@@ -6284,7 +6284,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'PT Sans', sans-serif;
-  font-size: 1.1 rem; }
+  font-size: 1.5rem; }
 
 .hidden,
 [hidden] {
@@ -6293,5 +6293,10 @@ body {
 header {
   height: 10vh;
   background-color: #00ea98; }
+
+.about {
+  background-color: #00ea98;
+  color: white;
+  padding: 30px; }
 
 /*# sourceMappingURL=style.css.map */
