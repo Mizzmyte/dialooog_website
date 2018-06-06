@@ -6299,4 +6299,24 @@ body {
   color: white;
   padding: 30px; }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0c3448;
+  padding: 30px; }
+  .project img {
+    padding: 20px 0; }
+
+.btn__novi {
+  border: 2px solid #00ea98;
+  padding: 10px 20px;
+  color: #00ea98; }
+
+a:hover {
+  text-decoration: none;
+  background-color: #00ea98;
+  color: #0c3448;
+  box-shadow: 2px 2px 5px #0c3448; }
+
 /*# sourceMappingURL=style.css.map */

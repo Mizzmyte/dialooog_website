@@ -11,3 +11,28 @@
   color: white;
   padding: 30px;
 }
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $blue;
+  padding: 30px;
+
+  img {
+    padding: 20px 0;
+  }
+}
+
+.btn__novi {
+  border: 2px solid $green;
+  padding: 10px 20px;
+  color: $green;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: $green;
+  color: $blue;
+  box-shadow: 2px 2px 5px $blue;
+}
