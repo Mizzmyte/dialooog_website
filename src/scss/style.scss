@@ -1,6 +1,13 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
+@import 'colors';
 @import 'base';
 @import 'utils';
 
 // add more components like header here
 @import 'components/header';
+
+.about {
+  background-color: $green;
+  color: white;
+  padding: 30px;
+}
