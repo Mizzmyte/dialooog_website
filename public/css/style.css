@@ -6319,4 +6319,17 @@ a:hover {
   color: #0c3448;
   box-shadow: 2px 2px 5px #0c3448; }
 
+.philosophy {
+  background-color: #00ea98;
+  color: white;
+  padding: 30px; }
+  .philosophy h4 {
+    font-weight: bold;
+    color: #0c3448; }
+  .philosophy p {
+    margin-bottom: 20px; }
+
+p:last-child {
+  margin-bottom: 0; }
+
 /*# sourceMappingURL=style.css.map */

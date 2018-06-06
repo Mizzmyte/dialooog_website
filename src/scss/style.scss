@@ -36,3 +36,22 @@ a:hover {
   color: $blue;
   box-shadow: 2px 2px 5px $blue;
 }
+
+.philosophy {
+  background-color: $green;
+  color: white;
+  padding: 30px;
+
+  h4 {
+    font-weight: bold;
+    color: $blue;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
