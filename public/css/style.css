@@ -6286,6 +6286,12 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 1.2rem; }
 
+a:hover {
+  text-decoration: none;
+  background-color: #00ea98;
+  color: #0c3448;
+  box-shadow: 2px 2px 5px #0c3448; }
+
 .hidden,
 [hidden] {
   background: aliceblue; }
@@ -6307,17 +6313,10 @@ body {
   padding: 30px; }
   .project img {
     padding: 20px 0; }
-
-.btn__novi {
-  border: 2px solid #00ea98;
-  padding: 10px 20px;
-  color: #00ea98; }
-
-a:hover {
-  text-decoration: none;
-  background-color: #00ea98;
-  color: #0c3448;
-  box-shadow: 2px 2px 5px #0c3448; }
+  .project .btn__novi {
+    border: 2px solid #00ea98;
+    padding: 10px 20px;
+    color: #00ea98; }
 
 .philosophy {
   background-color: #00ea98;
@@ -6328,8 +6327,7 @@ a:hover {
     color: #0c3448; }
   .philosophy p {
     margin-bottom: 20px; }
-
-p:last-child {
-  margin-bottom: 0; }
+    .philosophy p:last-child {
+      margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
