@@ -6286,6 +6286,10 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 1.2rem; }
 
+a {
+  color: #00ea98;
+  text-decoration: none; }
+
 a:hover {
   text-decoration: none;
   background-color: #00ea98;
@@ -6329,5 +6333,35 @@ a:hover {
     margin-bottom: 20px; }
     .philosophy p:last-child {
       margin-bottom: 0; }
+
+.team section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.team h2 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.team h4 {
+  color: #00ea98;
+  font-weight: bold;
+  margin: 0; }
+
+.team p {
+  margin: 0;
+  font-size: 1rem; }
+
+.team img {
+  width: 150px;
+  height: 150px;
+  margin: 30px 0 10px 0; }
+
+.team .btn__email {
+  border: 1px solid #00ea98;
+  padding: 2px 5px;
+  margin: 10px 0; }
 
 /*# sourceMappingURL=style.css.map */
