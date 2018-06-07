@@ -6364,4 +6364,17 @@ a:hover {
   padding: 2px 5px;
   margin: 10px 0; }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer a {
+    margin-right: 20px; }
+    footer a:last-child {
+      margin-right: 0; }
+  footer .footer__text {
+    border-top: 1px solid #0c3448; }
+  footer .arrow {
+    padding: 20px 0 10px 0; }
+
 /*# sourceMappingURL=style.css.map */

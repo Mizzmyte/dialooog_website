@@ -1,0 +1,21 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .footer__text {
+    border-top: 1px solid $blue;
+  }
+
+  .arrow {
+    padding: 20px 0 10px 0;
+  }
+}
