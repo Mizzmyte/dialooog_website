@@ -6321,6 +6321,11 @@ a:hover {
     border: 2px solid #00ea98;
     padding: 10px 20px;
     color: #00ea98; }
+  .project a:hover {
+    text-decoration: none;
+    background-color: #00ea98;
+    color: #0c3448;
+    box-shadow: 2px 2px 5px #0c3448; }
 
 .philosophy {
   background-color: #00ea98;
@@ -6373,7 +6378,8 @@ footer {
     footer a:last-child {
       margin-right: 0; }
   footer .footer__text {
-    border-top: 1px solid #0c3448; }
+    border-top: 1px solid #0c3448;
+    margin-bottom: 15px; }
   footer .arrow {
     padding: 20px 0 10px 0; }
 
