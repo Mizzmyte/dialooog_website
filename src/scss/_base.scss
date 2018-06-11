@@ -4,15 +4,3 @@ body {
   font-size: 1.2rem;
   background-color: $green;
 }
-
-a {
-  color: $green;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-  background-color: $green;
-  color: $blue;
-  box-shadow: 2px 2px 5px $blue;
-}

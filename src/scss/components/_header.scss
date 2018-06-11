@@ -4,18 +4,23 @@
   background-color: $green;
   margin: 0 0 10px;
   position: relative;
+
+  a {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .header__image {
-  width: 50%;
+  width: 60%;
 }
 
 .header__button {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 22px;
   width: 32px;
-  height: 24px;
+  height: 27px;
   border: none;
   display: flex;
   flex-direction: column;
@@ -40,11 +45,18 @@
 .header__nav {
   position: absolute;
   background: white;
-  padding: 20px;
-  right: 20px;
-  top: 100%;
+  padding: 10px 30px 10px 20px;
+  right: 26px;
+  top: 70%;
+
   a {
     display: block;
-    color: #333;
+    color: $blue;
+    padding: 5px 0;
+
+    &:hover {
+      background-color: $lightgreen;
+      text-decoration: none;
+    }
   }
 }
