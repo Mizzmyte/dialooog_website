@@ -23,6 +23,14 @@
   align-items: stretch;
   background: transparent;
 
+  &:focus {
+    outline: none;
+  }
+
+  &.active .stripe {
+    background: $blue;
+  }
+
   .stripe {
     height: 3px;
     background: white;

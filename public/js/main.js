@@ -10054,34 +10054,22 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _helpers = __webpack_require__(/*! ./utils/helpers.js */ "./src/js/utils/helpers.js");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Header = function () {
-  function Header(sel) {
-    var _this = this;
+var Header = function Header(sel) {
+  _classCallCheck(this, Header);
 
-    _classCallCheck(this, Header);
+  var header = document.querySelector(sel);
+  var burger = header.querySelector('button');
+  var nav = header.querySelector('nav');
 
-    this.el = (0, _helpers.getOne)(sel);
-    this.btn = this.el.querySelector('.js-settings');
-    this.btn.addEventListener('click', function (e) {
-      return _this.onClick(e);
-    });
-  }
-
-  _createClass(Header, [{
-    key: 'onClick',
-    value: function onClick(event) {
-      console.log('clicked settings button');
-    }
-  }]);
-
-  return Header;
-}();
+  burger.addEventListener('click', function (e) {
+    nav.classList.toggle('hidden');
+    burger.classList.toggle('active');
+  });
+};
 
 exports.default = Header;
 
@@ -10106,6 +10094,8 @@ var _Header = __webpack_require__(/*! ./Header.js */ "./src/js/Header.js");
 var _Header2 = _interopRequireDefault(_Header);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+new _Header2.default('[data-module-header]');
 
 /***/ }),
 

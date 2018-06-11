@@ -2,12 +2,13 @@ import { getOne } from './utils/helpers.js'
 
 export default class Header {
   constructor(sel) {
-    this.el = getOne(sel)
-    this.btn = this.el.querySelector('.js-settings')
-    this.btn.addEventListener('click', e => this.onClick(e))
-  }
+    const header = document.querySelector(sel)
+    const burger = header.querySelector('button')
+    const nav = header.querySelector('nav')
 
-  onClick(event) {
-    console.log('clicked settings button')
+    burger.addEventListener('click', e => {
+      nav.classList.toggle('hidden')
+      burger.classList.toggle('active')
+    })
   }
 }

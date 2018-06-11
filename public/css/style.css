@@ -6299,7 +6299,7 @@ a:hover {
 
 .hidden,
 [hidden] {
-  background: aliceblue; }
+  display: none !important; }
 
 .header {
   display: flex;
@@ -6323,6 +6323,10 @@ a:hover {
   justify-content: space-evenly;
   align-items: stretch;
   background: transparent; }
+  .header__button:focus {
+    outline: none; }
+  .header__button.active .stripe {
+    background: #0c3448; }
   .header__button .stripe {
     height: 3px;
     background: white; }
