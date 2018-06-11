@@ -1,4 +1,42 @@
 .header {
-  height: 10vh;
+  display: flex;
+  justify-content: center;
   background-color: $green;
+  margin: 0 0 10px;
+  position: relative;
+}
+
+.header__image {
+  width: 50%;
+}
+
+.header__button {
+  position: absolute;
+  right: 10px;
+  top: 22px;
+  width: 32px;
+  height: 24px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background: transparent;
+
+  .stripe {
+    height: 3px;
+    background: white;
+  }
+}
+
+.header__nav {
+  position: absolute;
+  background: white;
+  padding: 20px;
+  right: 20px;
+  top: 100%;
+  a {
+    display: block;
+    color: #333;
+  }
 }
