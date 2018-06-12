@@ -10040,10 +10040,10 @@ module.exports = function (module) {
 
 /***/ }),
 
-/***/ "./src/js/Header.js":
-/*!**************************!*\
-  !*** ./src/js/Header.js ***!
-  \**************************/
+/***/ "./src/js/Nav.js":
+/*!***********************!*\
+  !*** ./src/js/Nav.js ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10058,20 +10058,22 @@ var _helpers = __webpack_require__(/*! ./utils/helpers.js */ "./src/js/utils/hel
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Header = function Header(sel) {
-  _classCallCheck(this, Header);
+var Nav = function Nav(sel) {
+  _classCallCheck(this, Nav);
 
-  var header = document.querySelector(sel);
-  var burger = header.querySelector('button');
-  var nav = header.querySelector('nav');
+  var nav = document.querySelector(sel);
+  var button = nav.querySelector('button');
+  var navi = nav.querySelector('nav');
+  var div = nav.querySelector('div');
 
-  burger.addEventListener('click', function (e) {
-    nav.classList.toggle('hidden');
-    burger.classList.toggle('active');
+  button.addEventListener('click', function (e) {
+    // nav.classList.toggle('hidden')
+    button.classList.toggle('collapsed');
+    div.classList.toggle('show');
   });
 };
 
-exports.default = Header;
+exports.default = Nav;
 
 /***/ }),
 
@@ -10089,13 +10091,13 @@ var _jquery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jque
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _Header = __webpack_require__(/*! ./Header.js */ "./src/js/Header.js");
+var _Nav = __webpack_require__(/*! ./Nav.js */ "./src/js/Nav.js");
 
-var _Header2 = _interopRequireDefault(_Header);
+var _Nav2 = _interopRequireDefault(_Nav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-new _Header2.default('[data-module-header]');
+new _Nav2.default('[data-module-nav]');
 
 /***/ }),
 
