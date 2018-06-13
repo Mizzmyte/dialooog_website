@@ -1,0 +1,54 @@
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url('/images/menu_button.svg');
+  background-size: 90%;
+}
+
+.navbar {
+  position: fixed;
+  top: 8px;
+  color: $blue;
+  right: 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+  .nav-link {
+    padding-right: 0;
+    padding-left: 11px;
+    background-color: whitesmoke;
+    color: $blue;
+  }
+}
+
+.navbar-light {
+  border: none;
+}
+.navbar-toggler {
+  border: none;
+  background-color: $green;
+}
+
+.navbar-nav {
+  padding-right: 13px;
+  padding-left: 29px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: unset;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  position: absolute;
+  right: 16px;
+  top: 100%;
+  left: 40%;
+}
