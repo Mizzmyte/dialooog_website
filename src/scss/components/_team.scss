@@ -1,5 +1,7 @@
 .team {
   color: $blue;
+  background-color: white;
+  padding-bottom: 20px;
 
   section {
     display: flex;
@@ -18,6 +20,18 @@
     color: $green;
     font-weight: bold;
     margin: 0;
+  }
+
+  a {
+    color: $green;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $green;
+      color: $blue;
+      box-shadow: 2px 2px 5px $blue;
+    }
   }
 
   p {

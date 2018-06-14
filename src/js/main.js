@@ -1,4 +1,4 @@
 import $ from 'jquery'
-import Header from './Header.js'
+import Nav from './Nav.js'
 
-//const header = new Header('[data-module-header]')
+new Nav('[data-module-nav]')

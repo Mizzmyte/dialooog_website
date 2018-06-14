@@ -1,4 +1,16 @@
 .header {
-  height: 10vh;
+  display: flex;
+  justify-content: center;
   background-color: $green;
+  margin: 0 0 10px;
+  position: relative;
+}
+
+.header__image {
+  width: 50%;
+}
+
+.header__link {
+  display: flex;
+  justify-content: center;
 }

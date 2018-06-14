@@ -10040,10 +10040,10 @@ module.exports = function (module) {
 
 /***/ }),
 
-/***/ "./src/js/Header.js":
-/*!**************************!*\
-  !*** ./src/js/Header.js ***!
-  \**************************/
+/***/ "./src/js/Nav.js":
+/*!***********************!*\
+  !*** ./src/js/Nav.js ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10054,36 +10054,26 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _helpers = __webpack_require__(/*! ./utils/helpers.js */ "./src/js/utils/helpers.js");
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Header = function () {
-  function Header(sel) {
-    var _this = this;
+var Nav = function Nav(sel) {
+  _classCallCheck(this, Nav);
 
-    _classCallCheck(this, Header);
+  var nav = document.querySelector(sel);
+  var button = nav.querySelector('button');
+  var navi = nav.querySelector('nav');
+  var div = nav.querySelector('div');
 
-    this.el = (0, _helpers.getOne)(sel);
-    this.btn = this.el.querySelector('.js-settings');
-    this.btn.addEventListener('click', function (e) {
-      return _this.onClick(e);
-    });
-  }
+  button.addEventListener('click', function (e) {
+    // nav.classList.toggle('hidden')
+    button.classList.toggle('collapsed');
+    div.classList.toggle('show');
+  });
+};
 
-  _createClass(Header, [{
-    key: 'onClick',
-    value: function onClick(event) {
-      console.log('clicked settings button');
-    }
-  }]);
-
-  return Header;
-}();
-
-exports.default = Header;
+exports.default = Nav;
 
 /***/ }),
 
@@ -10101,11 +10091,13 @@ var _jquery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jque
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _Header = __webpack_require__(/*! ./Header.js */ "./src/js/Header.js");
+var _Nav = __webpack_require__(/*! ./Nav.js */ "./src/js/Nav.js");
 
-var _Header2 = _interopRequireDefault(_Header);
+var _Nav2 = _interopRequireDefault(_Nav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+new _Nav2.default('[data-module-nav]');
 
 /***/ }),
 

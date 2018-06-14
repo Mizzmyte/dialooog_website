@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   color: $blue;
+  background-color: white;
   padding: 30px;
 
   img {
@@ -15,10 +16,15 @@
     color: $green;
   }
 
-  a:hover {
+  a {
+    color: $green;
     text-decoration: none;
-    background-color: $green;
-    color: $blue;
-    box-shadow: 2px 2px 5px $blue;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $green;
+      color: $blue;
+      box-shadow: 2px 2px 5px $blue;
+    }
   }
 }
