@@ -6299,11 +6299,14 @@ body {
   position: relative; }
 
 .header__image {
-  width: 50%; }
+  width: 100%; }
 
 .header__link {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  width: 50%; }
 
 .about {
   background-color: #00ea98;
@@ -6446,5 +6449,25 @@ button:focus {
   right: 16px;
   top: 100%;
   left: 40%; }
+
+.imprint {
+  background-color: white;
+  padding: 30px; }
+  .imprint h3 {
+    padding: 0 0 20px 0;
+    font-weight: bold; }
+  .imprint h4 {
+    padding: 35px 0 20px 0;
+    font-weight: bold; }
+
+.privacy {
+  background-color: white;
+  padding: 30px; }
+  .privacy h3 {
+    padding: 0 0 20px 0;
+    font-weight: bold; }
+  .privacy h4 {
+    padding: 35px 0 20px 0;
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
