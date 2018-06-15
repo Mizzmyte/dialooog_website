@@ -6459,6 +6459,8 @@ button:focus {
   .imprint h4 {
     padding: 35px 0 20px 0;
     font-weight: bold; }
+  .imprint a {
+    text-decoration: none; }
 
 .privacy {
   background-color: white;
