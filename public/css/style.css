@@ -6350,38 +6350,51 @@ body {
   color: #0c3448;
   background-color: white;
   padding-bottom: 20px; }
-  .team section {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
   .team h2 {
     padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center; }
-  .team h4 {
-    color: #00ea98;
-    font-weight: bold;
-    margin: 0; }
-  .team a {
-    color: #00ea98;
-    text-decoration: none; }
-    .team a:hover {
-      text-decoration: none;
-      background-color: #00ea98;
-      color: #0c3448;
-      box-shadow: 2px 2px 5px #0c3448; }
-  .team p {
-    margin: 0;
-    font-size: 1rem; }
-  .team img {
-    width: 150px;
-    height: 150px;
-    margin: 30px 0 10px 0; }
-  .team .btn__email {
-    border: 1px solid #00ea98;
-    padding: 2px 5px;
-    margin: 10px 0; }
+
+.person section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.person h4 {
+  color: #00ea98;
+  font-weight: bold;
+  margin: 0; }
+
+.person a {
+  color: #00ea98;
+  text-decoration: none; }
+  .person a:hover {
+    text-decoration: none;
+    background-color: #00ea98;
+    color: #0c3448;
+    box-shadow: 2px 2px 5px #0c3448; }
+
+.person p {
+  margin: 0;
+  font-size: 1rem; }
+
+.person img {
+  width: 150px;
+  height: 150px;
+  margin: 30px 0 10px 0; }
+
+.person .btn__email {
+  border: 1px solid #00ea98;
+  padding: 2px 5px;
+  margin: 10px 0; }
+
+@media (min-width: 500px) {
+  .person {
+    display: flex;
+    flex-wrap: wrap; }
+    .person section {
+      margin: 0 auto; } }
 
 footer {
   display: flex;
@@ -6466,18 +6479,14 @@ button:focus {
   .header__link {
     right: 31%; }
   .navbar-expand-lg .navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: center;
-    position: absolute;
-    right: 16px;
-    top: 100%;
     left: unset; }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 1.5rem; }
-  .navbar .nav-link {
-    background-color: transparent; } }
+  .navbar {
+    position: absolute; }
+    .navbar .nav-link {
+      background-color: transparent; } }
 
 .imprint {
   background-color: white;

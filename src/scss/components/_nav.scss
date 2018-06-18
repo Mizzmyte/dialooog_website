@@ -80,12 +80,6 @@ button {
 
   .navbar-expand-lg {
     .navbar-collapse {
-      flex-basis: 100%;
-      flex-grow: 1;
-      align-items: center;
-      position: absolute;
-      right: 16px;
-      top: 100%;
       left: unset;
     }
 
@@ -98,6 +92,8 @@ button {
   }
 
   .navbar {
+    position: absolute;
+
     .nav-link {
       background-color: transparent;
     }
