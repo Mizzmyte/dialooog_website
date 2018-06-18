@@ -74,13 +74,24 @@ button {
 }
 
 @media (min-width: 992px) {
+  .header__link {
+    right: 31%;
+  }
+
   .navbar-expand-lg {
     .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+      align-items: center;
+      position: absolute;
+      right: 16px;
+      top: 100%;
+      left: unset;
     }
-    .navbar {
-      .nav-link {
-        background-color: transparent;
-      }
+  }
+  .navbar {
+    .nav-link {
+      background-color: transparent;
     }
   }
 }
