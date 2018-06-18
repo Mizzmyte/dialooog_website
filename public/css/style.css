@@ -6473,6 +6473,9 @@ button:focus {
     right: 16px;
     top: 100%;
     left: unset; }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem; }
   .navbar .nav-link {
     background-color: transparent; } }
 
