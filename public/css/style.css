@@ -6450,6 +6450,22 @@ button:focus {
   top: 100%;
   left: 40%; }
 
+@media (min-width: 440px) {
+  .header__image {
+    margin-top: 10px; }
+  .navbar {
+    top: 15px; } }
+
+@media (min-width: 540px) {
+  .header__image {
+    margin-top: 20px; }
+  .navbar {
+    top: 20px; } }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar .nav-link {
+    background-color: transparent; } }
+
 .imprint {
   background-color: white;
   padding: 30px; }
