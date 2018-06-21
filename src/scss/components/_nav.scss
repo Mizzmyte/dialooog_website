@@ -11,7 +11,7 @@ button {
 
 .navbar {
   position: fixed;
-  top: 8px;
+  top: 20px;
   color: $blue;
   right: 0;
   display: flex;
@@ -51,4 +51,41 @@ button {
   right: 16px;
   top: 100%;
   left: 40%;
+}
+
+@media (min-width: 540px) {
+  .header__image {
+    margin-top: 49px;
+  }
+
+  .navbar {
+    top: 51px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__link {
+    right: 27%;
+  }
+
+  .navbar-expand-lg {
+    .navbar-collapse {
+      left: unset;
+    }
+
+    .navbar-nav {
+      .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+
+  .navbar {
+    position: absolute;
+
+    .nav-link {
+      background-color: transparent;
+    }
+  }
 }

@@ -1,0 +1,39 @@
+.contactbutton {
+  display: flex;
+  justify-content: center;
+
+  button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    width: max-content;
+    height: max-content;
+    margin-bottom: 35px;
+    padding: 10px 20px;
+  }
+}
+
+.active {
+  box-shadow: 3px 3px 15px $middleblue;
+}
+
+.contactform {
+  padding: 0px 10% 20px 10%;
+
+  #mc_embed_signup {
+    clear: left;
+  }
+
+  #mc_embed_signup .mc-field-group.input-group ul {
+    margin-left: 30px;
+  }
+
+  #mc_embed_signup .button {
+    background-color: white;
+    color: $blue;
+  }
+
+  #mc_embed_signup form {
+    padding: none;
+  }
+}
