@@ -9,7 +9,7 @@ export default class Contactform {
 
     contactbutton.addEventListener('click', e => {
       contactform.classList.toggle('hidden')
-      button.classList.toggle('activ')
+      button.classList.toggle('active')
     })
   }
 }

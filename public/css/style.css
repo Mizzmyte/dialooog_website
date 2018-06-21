@@ -6299,7 +6299,8 @@ body {
   position: relative; }
 
 .header__image {
-  width: 100%; }
+  width: 100%;
+  margin-top: 20px; }
 
 .header__link {
   display: flex;
@@ -6430,7 +6431,7 @@ button:focus {
 
 .navbar {
   position: fixed;
-  top: 8px;
+  top: 20px;
   color: #0c3448;
   right: 0;
   display: flex;
@@ -6465,17 +6466,11 @@ button:focus {
   top: 100%;
   left: 40%; }
 
-@media (min-width: 440px) {
-  .header__image {
-    margin-top: 10px; }
-  .navbar {
-    top: 15px; } }
-
 @media (min-width: 540px) {
   .header__image {
     margin-top: 49px; }
   .navbar {
-    top: 20px; } }
+    top: 51px; } }
 
 @media (min-width: 992px) {
   .header__link {
@@ -6520,11 +6515,11 @@ button:focus {
     border: none;
     width: max-content;
     height: max-content;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     padding: 5px 10px; }
 
-.activ {
-  box-shadow: 1px 1px 5px #0c3448; }
+.active {
+  box-shadow: 3px 3px 15px rgba(12, 52, 72, 0.6); }
 
 .contactform {
   padding: 0px 10% 20px 10%; }

@@ -11,7 +11,7 @@ button {
 
 .navbar {
   position: fixed;
-  top: 8px;
+  top: 20px;
   color: $blue;
   right: 0;
   display: flex;
@@ -53,23 +53,13 @@ button {
   left: 40%;
 }
 
-@media (min-width: 440px) {
-  .header__image {
-    margin-top: 10px;
-  }
-
-  .navbar {
-    top: 15px;
-  }
-}
-
 @media (min-width: 540px) {
   .header__image {
     margin-top: 49px;
   }
 
   .navbar {
-    top: 20px;
+    top: 51px;
   }
 }
 

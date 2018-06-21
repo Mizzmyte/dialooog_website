@@ -10068,7 +10068,7 @@ var Contactform = function Contactform(sel) {
 
   contactbutton.addEventListener('click', function (e) {
     contactform.classList.toggle('hidden');
-    button.classList.toggle('activ');
+    button.classList.toggle('active');
   });
 };
 
