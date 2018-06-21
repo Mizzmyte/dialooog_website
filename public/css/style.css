@@ -6311,7 +6311,7 @@ body {
 .about {
   background-color: #00ea98;
   color: white;
-  padding: 30px; }
+  padding: 30px 10%; }
 
 .project {
   display: flex;
@@ -6319,7 +6319,7 @@ body {
   align-items: center;
   color: #0c3448;
   background-color: white;
-  padding: 30px; }
+  padding: 30px 10%; }
   .project img {
     padding: 20px 0; }
   .project .btn__novi {
@@ -6337,7 +6337,7 @@ body {
 
 .philosophy {
   color: white;
-  padding: 30px; }
+  padding: 30px 10%; }
   .philosophy h4 {
     font-weight: bold;
     color: #0c3448; }
@@ -6359,7 +6359,8 @@ body {
 .person section {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding: 0 3%; }
 
 .person h4 {
   color: #00ea98;
@@ -6392,7 +6393,8 @@ body {
 @media (min-width: 500px) {
   .person {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
     .person section {
       margin: 0 auto; } }
 
@@ -6471,13 +6473,13 @@ button:focus {
 
 @media (min-width: 540px) {
   .header__image {
-    margin-top: 20px; }
+    margin-top: 49px; }
   .navbar {
     top: 20px; } }
 
 @media (min-width: 992px) {
   .header__link {
-    right: 31%; }
+    right: 27%; }
   .navbar-expand-lg .navbar-collapse {
     left: unset; }
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -6490,7 +6492,7 @@ button:focus {
 
 .imprint {
   background-color: white;
-  padding: 30px; }
+  padding: 30px 10%; }
   .imprint h3 {
     padding: 0 0 20px 0;
     font-weight: bold; }
@@ -6502,12 +6504,38 @@ button:focus {
 
 .privacy {
   background-color: white;
-  padding: 30px; }
+  padding: 30px 10%; }
   .privacy h3 {
     padding: 0 0 20px 0;
     font-weight: bold; }
   .privacy h4 {
     padding: 35px 0 20px 0;
     font-weight: bold; }
+
+.contactbutton {
+  display: flex;
+  justify-content: center; }
+  .contactbutton button {
+    background-color: white;
+    border: none;
+    width: max-content;
+    height: max-content;
+    margin-bottom: 20px;
+    padding: 5px 10px; }
+
+.activ {
+  box-shadow: 1px 1px 5px #0c3448; }
+
+.contactform {
+  padding: 0px 10% 20px 10%; }
+  .contactform #mc_embed_signup {
+    clear: left; }
+  .contactform #mc_embed_signup .mc-field-group.input-group ul {
+    margin-left: 30px; }
+  .contactform #mc_embed_signup .button {
+    background-color: white;
+    color: #0c3448; }
+  .contactform #mc_embed_signup form {
+    padding: none; }
 
 /*# sourceMappingURL=style.css.map */

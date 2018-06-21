@@ -10040,6 +10040,42 @@ module.exports = function (module) {
 
 /***/ }),
 
+/***/ "./src/js/Contact.js":
+/*!***************************!*\
+  !*** ./src/js/Contact.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _helpers = __webpack_require__(/*! ./utils/helpers.js */ "./src/js/utils/helpers.js");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Contactform = function Contactform(sel) {
+  _classCallCheck(this, Contactform);
+
+  var contact = document.querySelector(sel);
+  var contactbutton = document.querySelector('.contactbutton');
+  var button = contactbutton.querySelector('button');
+  var contactform = document.querySelector('.contactform');
+
+  contactbutton.addEventListener('click', function (e) {
+    contactform.classList.toggle('hidden');
+    button.classList.toggle('activ');
+  });
+};
+
+exports.default = Contactform;
+
+/***/ }),
+
 /***/ "./src/js/Nav.js":
 /*!***********************!*\
   !*** ./src/js/Nav.js ***!
@@ -10095,9 +10131,14 @@ var _Nav = __webpack_require__(/*! ./Nav.js */ "./src/js/Nav.js");
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
+var _Contact = __webpack_require__(/*! ./Contact.js */ "./src/js/Contact.js");
+
+var _Contact2 = _interopRequireDefault(_Contact);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 new _Nav2.default('[data-module-nav]');
+new _Contact2.default('[data-module-contact]');
 
 /***/ }),
 
