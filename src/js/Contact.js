@@ -1,6 +1,6 @@
 import { getOne } from './utils/helpers.js'
 
-export default class Contactform {
+export default class Contact {
   constructor(sel) {
     const contact = document.querySelector(sel)
     const contactbutton = document.querySelector('.contactbutton')
