@@ -6431,7 +6431,7 @@ button:focus {
 
 .navbar {
   position: fixed;
-  top: 20px;
+  top: 25px;
   color: #0c3448;
   right: 0;
   display: flex;
